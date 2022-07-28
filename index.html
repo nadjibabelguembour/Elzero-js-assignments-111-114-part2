@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2 (vid 111-114)</title>
+    
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+       
+        .flexCol{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px gray;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            color: lightseagreen;
+            
+        }
+        input,
+        select{
+            width: 250px;
+            height: 30px;
+            border: 1px solid lightseagreen;
+            outline: none;
+            text-align: center;
+        }
+      
+        input:last-child{
+            color: white;
+            background-color: lightseagreen;
+            border: none;
+            border-radius: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="container flexCol">
+        <h1>WELCOME</h1>
+        <br>
+        <form class="myForm flexCol">
+            <input type="text" id="name" placeholder="Enter your full name" required>
+            <input type="number" id="age" placeholder="Enter your age" required>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <select id="country">
+                <option value="Algeria" >Algeria</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Morroco">Morroco</option>
+                <option value="Canada">Canada</option>
+                <option value="Brazil">Brazil</option>
+              </select>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
